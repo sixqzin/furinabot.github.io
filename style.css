@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f0f0f;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #000;
+  padding: 1rem 0;
+  border-bottom: 1px solid #111;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  color: #00ffff;
+  font-weight: bold;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 1.2rem;
+}
+
+.nav-links a {
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00ffff;
+}
+
+/* HERO */
+.hero {
+  background: url('https://files.catbox.moe/erdxhh.jpeg') center/cover no-repeat;
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  background-color: #00ffff;
+  color: #000;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
+
+/* SECTION GERAL */
+section {
+  padding: 4rem 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* FEATURES */
+.features h2, .commands h2, .vip h2, .testimonials h2,
+.faq h2, .updates h2, .contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
+}
+
+.features .grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #000;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: #222;
+}
+
+/* COMANDOS */
+.commands ul li {
+  background: #111;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-left: 5px solid #00ffff;
+  border-radius: 8px;
+}
+
+/* VIP */
+.vip ul {
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+.vip ul li {
+  margin-bottom: 0.8rem;
+}
+
+/* TESTIMONIALS */
+.testimonials blockquote {
+  background: #1a1a1a;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-left: 5px solid #00ffff;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* FAQ */
+.faq ul li {
+  margin-bottom: 1.5rem;
+  background: #111;
+  padding: 1rem;
+  border-left: 5px solid #00ffff;
+  border-radius: 8px;
+}
+
+/* UPDATES */
+.updates ul li {
+  background: #111;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #00ffff;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #000;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}

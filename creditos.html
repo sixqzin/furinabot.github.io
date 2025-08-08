@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créditos - Furina Bot</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+    }
+
+    .main-creditos {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      min-height: 80vh;
+      padding: 40px 20px;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .creditos-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      padding: 25px 30px;
+      text-align: center;
+      max-width: 360px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+      flex: 1 1 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid white;
+    }
+
+    .creditos-container img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
+    .creditos-container h2 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      color: white;
+    }
+
+    .creditos-container p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: white;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      margin-top: auto;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebc59;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- NAVBAR igual à index.html -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo-text">Furina Bot</span>
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#comandos">Comandos</a></li>
+        <li><a href="vip.html">VIP</a></li>
+        <li><a href="atualizacoes.html">Atualizações</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="creditos.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Conteúdo centralizado -->
+  <div class="main-creditos">
+
+    <div class="creditos-container">
+      <img src="https://files.catbox.moe/k0fqzn.jpeg" alt="Criador do Bot" />
+      <h2>Criado por sixqzin</h2>
+      <p>Responsável pelo desenvolvimento, design e manutenção do Furina Bot.</p>
+      <a href="https://wa.me/555591888116" target="_blank" class="whatsapp-button">
+        📱 Falar comigo no WhatsApp
+      </a>
+    </div>
+
+    <div class="creditos-container">
+      <img src="https://files.catbox.moe/d84suu.PNG" alt="Tester do Bot" />
+      <h2>Batata M</h2>
+      <p>Responsável por testar o Furina Bot e identificar erros.</p>
+      <a href="https://wa.me/555193691847" target="_blank" class="whatsapp-button">
+        📱 Falar comigo no WhatsApp
+      </a>
+    </div>
+
+  </div>
+
+</body>
+</html>

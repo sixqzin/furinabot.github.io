@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atualizações - Furina Bot</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url("https://files.catbox.moe/erdxhh.jpeg") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .update {
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00ffff;
+    }
+
+    .update h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .update ul {
+      padding-left: 20px;
+    }
+
+    .update ul li {
+      margin-bottom: 5px;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="logo-text">Furina Bot</span>
+      <ul class="nav-links">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#comandos">Comandos</a></li>
+        <li><a href="vip.html">VIP</a></li>
+        <li><a href="atualizacoes.html">Atualizações</a></li> <!-- Adicionado aqui -->
+        <li><a href="index.html#faq">FAQ</a></li>
+        <li><a href="creditos.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h1>📢 Atualizações do Furina Bot</h1>
+    <div id="updates"></div>
+  </div>
+
+  <script>
+    const updates = [
+      {
+        "data": "06/08/2025",
+        "titulo": "Novidades Recentes",
+        "itens": [
+          "Adicionada nova página de créditos com botão interativo",
+          "Layout VIP atualizado com planos diferenciados",
+          "Fundo exclusivo para área VIP"
+        ]
+      },
+      {
+        "data": "01/08/2025",
+        "titulo": "Lançamento do Site 🎉",
+        "itens": [
+          "Criação do site Furina Bot com menu e design personalizado",
+          "Implementação inicial da página única"
+        ]
+      }
+    ];
+
+    const container = document.getElementById('updates');
+
+    updates.forEach(atualizacao => {
+      const div = document.createElement('div');
+      div.classList.add('update');
+      div.innerHTML = `
+        <h2>${atualizacao.data} - ${atualizacao.titulo}</h2>
+        <ul>
+          ${atualizacao.itens.map(item => `<li>${item}</li>`).join('')}
+        </ul>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
